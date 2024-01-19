@@ -8,6 +8,7 @@
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js
 
+require('dotenv').config();
 const { configure } = require('quasar/wrappers');
 const path = require('path');
 
@@ -63,7 +64,7 @@ module.exports = configure(function (/* ctx */) {
 
       // publicPath: '/',
       // analyze: true,
-      env: require('dotenv').config().parsed,
+      env: process.env,
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,
