@@ -1,1 +1,10 @@
 // app global css in SCSS form
+.q-btn {
+  color: $text-black;
+}
+
+.q-toolbar {
+  background-color: $dark;
+  display: flex;
+  justify-content: space-between;
+}
